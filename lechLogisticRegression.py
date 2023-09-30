@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# Homework 2 Code
 import numpy as np
 import pandas as pd
 
