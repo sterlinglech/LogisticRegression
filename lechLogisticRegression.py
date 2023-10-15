@@ -75,12 +75,12 @@ def logistic_reg(X, y, w_init, max_its, eta, grad_threshold):
 
 def Run_Logistic_Regression():
     # Load training data
-    train_data = pd.read_csv('Data/clevelandtrain.csv')
+    train_data = pd.read_csv('Data/cleveland_data/clevelandtrain.csv')
     X_train = train_data.drop('heartdisease::category|0|1', axis=1).values
     y_train = train_data['heartdisease::category|0|1'].values
 
     # Load test data
-    test_data = pd.read_csv('Data/clevelandtest.csv')
+    test_data = pd.read_csv('Data/cleveland_data/clevelandtest.csv')
     X_test = test_data.drop('heartdisease::category|0|1', axis=1).values
     y_test = test_data['heartdisease::category|0|1'].values
 
@@ -125,12 +125,12 @@ def Run_Logistic_Regression():
 def Run_Logistic_Regression_With_Various_Learning_Rates():
 
     # Load training data
-    train_data = pd.read_csv('Data/clevelandtrain.csv')
+    train_data = pd.read_csv('Data/cleveland_data/clevelandtrain.csv')
     X_train = train_data.drop('heartdisease::category|0|1', axis=1).values
     y_train = train_data['heartdisease::category|0|1'].values
 
     # Load test data
-    test_data = pd.read_csv('Data/clevelandtest.csv')
+    test_data = pd.read_csv('Data/cleveland_data/clevelandtest.csv')
     X_test = test_data.drop('heartdisease::category|0|1', axis=1).values
     y_test = test_data['heartdisease::category|0|1'].values
 
